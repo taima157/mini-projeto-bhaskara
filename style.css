@@ -70,6 +70,16 @@ input#env {
     justify-content: center;
 }
 
+.h3x1 {
+    position: absolute;
+    transform: translate(-130px, -25px);
+}
+
+.h3x2 {
+    position: absolute;
+    transform: translate(15px, -25px);
+}
+
 .resul {
     background-color: lightgrey;
     margin: 0px 5px 50px 5px;
