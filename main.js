@@ -18,8 +18,8 @@ function bhaskara() {
     let delta =  b * b - 4 * a * c;
     let raizDelta = Math.sqrt(delta);
 
-    let x1 = (-b + raizDelta) / (2 * a);
-    let x2 = (-b - raizDelta) / (2 * a);
+    let x1 = ((-b + raizDelta) / (2 * a)).toFixed(4);
+    let x2 = ((-b - raizDelta) / (2 * a)).toFixed(4);
 
     let resultado = {
         x1: x1,
