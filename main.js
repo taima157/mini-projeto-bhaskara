@@ -21,9 +21,6 @@ function bhaskara() {
     let x1 = (-b + raizDelta) / (2 * a);
     let x2 = (-b - raizDelta) / (2 * a);
 
-    console.log(raizDelta);
-    console.log(delta);
-
     let resultado = {
         x1: x1,
         x2: x2
