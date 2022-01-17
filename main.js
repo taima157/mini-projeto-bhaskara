@@ -15,7 +15,7 @@ function bhaskara() {
     let b = numB.value;
     let c = numC.value;
 
-    let delta =  b * b - 4 * a * c;
+    let delta =  (b * b) - 4 * a * c;
     let raizDelta = Math.sqrt(delta);
 
     let x1 = ((-b + raizDelta) / (2 * a)).toFixed(4);
