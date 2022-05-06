@@ -10,7 +10,7 @@
 
 body {
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     background: rgb(12,13,93);
     background: linear-gradient(40deg, rgba(12,13,93,1) 0%, rgba(80,62,221,1) 100%);
 }
