@@ -5,26 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bhaskara</title>
-    <script src="main.js" defer></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <form id="calcbhaskara">
-        <h1>Equação do segundo grau.</h1>
-        <h2>Adicione o valor do termo a</h2> 
-        <input class="num" type="number" id="a" placeholder="a">
-        <h2>Adicione o valor do termo b</h2> 
-        <input class="num" type="number" id="b" placeholder="b">
-        <h2>Adicione o valor do termo c</h2> 
-        <input class="num" type="number" id="c" placeholder="c">
-        <div id="resultados">
-            <h3 class="h3x1">x1</h3>
-            <div class="resul"><p id="x1"></p></div>
-            <h3 class="h3x2">x2</h3>
-            <div class="resul"><p id="x2"></p></div>
-        </div>
-        <input type="submit" id="env" value="Calcular">
-        <a href="index.html">Resetar</a>
-    </form>
+    <div id="container">
+        <form id="calcbhaskara">
+            <h1>Equação do segundo grau.</h1>
+            <div id="flex-container">
+                <div>
+                    <div class="inputs">
+                        <label for="num-a">Adicione o valor do termo A</label>
+                        <input class="num" type="number" id="num-a" placeholder="a" required autocomplete="off">
+                    </div>
+                    <div class="inputs">
+                        <label for="num-b">Adicione o valor do termo B</label>
+                        <input class="num" type="number" id="num-b" placeholder="b" required autocomplete="off">
+                    </div>
+                    <div class="inputs">
+                        <label for="num-c">Adicione o valor do termo C</label>
+                        <input class="num" type="number" id="num-c" placeholder="c" required autocomplete="off">
+                    </div>
+                </div>
+                <div id="process">
+                    <div id="buttons">
+                        <input type="submit" id="env" value="Calcular">
+                        <input type="reset" value="Resetar">
+                    </div>
+                    <div id="resultados">
+                        <div class="x">
+                            <h3>X1</h3>
+                            <input class="resul" type="text" id="x1" value="" disabled>
+                        </div>
+                        <div class="x">
+                            <h3>X2</h3>
+                            <input class="resul" type="text" id="x2" value="" disabled>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
